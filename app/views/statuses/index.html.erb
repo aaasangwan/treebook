@@ -1,6 +1,7 @@
 <div class = "page-header">
   <h1>Learned Today</h1>
 </div>
+<%= link_to "New Blog" ,new_status_path, class: "btn btn-success" %>
 
 <% @statuses.each do|status| %>
   <div class = "status">
