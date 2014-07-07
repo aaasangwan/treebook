@@ -8,6 +8,9 @@ gem 'devise'
 group :development, :test do
 	gem 'sqlite3'
 end
+group :production do
+        gem 'pg'
+end
 
 
 gem 'simple_form'
@@ -31,6 +34,7 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+gem 'rails_12factor', group: :production
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
